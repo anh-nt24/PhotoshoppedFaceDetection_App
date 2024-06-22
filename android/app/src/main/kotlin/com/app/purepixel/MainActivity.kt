@@ -1,4 +1,4 @@
-package com.app.photoshoppedfacedetection_app
+package com.app.purepixel
 
 import io.flutter.embedding.android.FlutterActivity
 
