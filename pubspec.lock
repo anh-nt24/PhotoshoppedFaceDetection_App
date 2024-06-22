@@ -335,7 +335,11 @@ packages:
       sha256: "25dfcaf170a0190f47ca6355bdd4552cb8924b430512ff0cafb8db9bd41fe33b"
       url: "https://pub.dev"
     source: hosted
+<<<<<<< HEAD
     version: "1.14.0"
+=======
+    version: "1.12.0"
+>>>>>>> 5ed2cbe5e6c5e5fc41a9d19ff01b9493da8bc609
   mime:
     dependency: transitive
     description:
@@ -468,7 +472,11 @@ packages:
       sha256: "7475cb4dd713d57b6f7464c0e13f06da0d535d8b2067e188962a59bac2cf280b"
       url: "https://pub.dev"
     source: hosted
+<<<<<<< HEAD
     version: "14.2.2"
+=======
+    version: "14.2.1"
+>>>>>>> 5ed2cbe5e6c5e5fc41a9d19ff01b9493da8bc609
   web:
     dependency: transitive
     description:
