@@ -34,7 +34,7 @@ class ResultPage extends StatelessWidget {
 								fontSize: 30,
 								fontWeight: FontWeight.bold,
 								),
-								textAlign: TextAlign.center,
+								textAlign: TextAlign.start,
 							),
 						),
 						
@@ -46,7 +46,7 @@ class ResultPage extends StatelessWidget {
 							child: Text(
 								'We identified areas that might have been edited in your photo. Review the highlighted regions for more details.',
 								style: TextStyle(fontSize: 16),
-								textAlign: TextAlign.center,
+								textAlign: TextAlign.start,
 							),
 						),
 					
@@ -54,7 +54,7 @@ class ResultPage extends StatelessWidget {
 						SizedBox(height: 20),
 					
 						// DISPLAY RESULT
-						if (resultState.result != null)
+						if (resultState.result != null) 
 							Expanded(
 								child: Align(
 									alignment: Alignment.center,
@@ -101,23 +101,9 @@ class ResultPage extends StatelessWidget {
 									textAlign: TextAlign.center,
 								),
 							),
-							// Container(
-							// 	width: 320,
-							// 	height: 320,
-							// 	decoration: BoxDecoration(
-							// 		border: Border.all(
-							// 			color: Color.fromRGBO(221, 102, 99, 1.0),
-							// 			width: 4, // Adjust this value for thicker border
-							// 		),
-							// 		borderRadius: BorderRadius.circular(8),
-							// 	),
-								
-							// 	child: Image.file(resultState.result!, fit: BoxFit.cover),
-							// ),
-						// if (resultState.result != null)
 
 
-						
+			
 						SizedBox(height: 20),
 						
 						Container(
@@ -129,6 +115,10 @@ class ResultPage extends StatelessWidget {
 									imageState.resetState();
 									Navigator.pop(context);
 								},
+								style: ElevatedButton.styleFrom(
+									backgroundColor: Color.fromRGBO(221, 102, 99, 1.0),
+									foregroundColor: Colors.white,
+								),
 								child: Text('Done', style: TextStyle(fontSize: 18)),
 							),
 						),

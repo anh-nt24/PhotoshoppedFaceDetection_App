@@ -35,7 +35,6 @@ class ResultState extends ChangeNotifier {
 		var multipart = await http.MultipartFile.fromPath('image', imageFile.path);
 		_response = await _apiService.analyzeImage(multipart, context);
 		var file = handleResult(context);
-		print(file);
 
 		_setLoading(false);
 		notifyListeners();
@@ -54,7 +53,7 @@ class ResultState extends ChangeNotifier {
 				_result = file;
 				return file;
 			} else if (status == 400) {
-				var data = await _response!.stream.toString();
+				var data = await _response!.stream.bytesToString();
 				MotionToast(
 					icon: Icons.warning_amber_outlined,
 					primaryColor:  Colors.amber[200]!,

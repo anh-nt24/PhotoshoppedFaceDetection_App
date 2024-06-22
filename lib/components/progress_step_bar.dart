@@ -11,7 +11,7 @@ class ProgressStepBar extends StatelessWidget {
 
 	const ProgressStepBar({
 		Key? key,
-		this.value = 0.65,
+		this.value = 0.6,
 		this.fromRight = false,
 		this.height = 6.0,
 		this.width = 150.0,
