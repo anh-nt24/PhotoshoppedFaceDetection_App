@@ -1,4 +1,4 @@
-package com.app.purepixel
+package com.purepixel
 
 import io.flutter.embedding.android.FlutterActivity
 
