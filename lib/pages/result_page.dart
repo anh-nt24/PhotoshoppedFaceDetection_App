@@ -17,7 +17,7 @@ class ResultPage extends StatelessWidget {
 					mainAxisAlignment: MainAxisAlignment.center,
 					children: [
 						SizedBox(height: 80),
-						
+		
 						// TASK BAR
 						ProgressStepBar(fromRight: true,),
 
