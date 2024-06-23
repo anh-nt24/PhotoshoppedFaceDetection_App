@@ -27,7 +27,7 @@ Figma design: [here](https://www.figma.com/design/pT6wvj73j4eX4mIYZMSHfE/PurePix
 
 <p align="center">
   <img src="https://github.com/anh-nt24/PhotoshoppedFaceDetection_App/assets/106876168/cbdf1da7-3833-4c18-a7ca-7105c6de34a4" width="250" />
-  <img src="https://github.com/anh-nt24/PhotoshoppedFaceDetection_App/assets/106876168/99903b8b-c6b1-4da3-9e2d-419046830155" width="250" />
+  <img src="https://github.com/anh-nt24/PhotoshoppedFaceDetection_App/assets/106876168/5c343d0c-4203-4377-b843-ceec165a7313" width="250" />
   <img src="https://github.com/anh-nt24/PhotoshoppedFaceDetection_App/assets/106876168/8f4360a5-49b8-45c4-909e-5c43f7bb9a3e" width="250" />
 </p>
 
