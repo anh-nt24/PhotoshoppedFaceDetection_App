@@ -18,7 +18,7 @@ class ResultPage extends StatelessWidget {
 				child: Column(
 					mainAxisAlignment: MainAxisAlignment.center,
 					children: [
-						SizedBox(height: 50), // Space from top
+						SizedBox(height: 80), // Space from top
 						
 						// TASK BAR
 						ProgressStepBar(fromRight: true,),
