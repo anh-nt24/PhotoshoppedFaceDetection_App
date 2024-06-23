@@ -1,7 +1,5 @@
 import 'dart:io';
 import 'package:flutter/foundation.dart';
-import 'package:photoshoppedfacedetection_app/states/image_state.dart';
-import 'package:provider/provider.dart';
 
 class HoldingState extends ChangeNotifier {
 	File? selectedImage; 

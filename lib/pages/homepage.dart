@@ -28,28 +28,36 @@ class MyHomePage extends StatelessWidget {
 							SizedBox(height: 50),
 
 							// HEADING
-							Padding(
-								padding: const EdgeInsets.symmetric(horizontal: 20.0),
-								child: Text(
-									'Upload an image to detect edited regions',
-									style: TextStyle(
-										fontSize: 27,
-										fontWeight: FontWeight.bold,
+							SizedBox(
+								height: 90,
+								child: Padding(
+									padding: const EdgeInsets.symmetric(horizontal: 20.0),
+									child: Text(
+										'Upload an image to detect edited regions',
+										style: TextStyle(
+											fontSize: 27,
+											fontWeight: FontWeight.bold,
+										),
 									),
 								),
 							),
 
+
 							SizedBox(height: 8),
 
 							// SUB HEADING
-							Padding(
-								padding: const EdgeInsets.symmetric(horizontal: 20.0),
-								child: Text(
-									'Regulations require you to upload a facial photo. '
-									'Don\'t worry, your data will be safe and private.',
-									style: TextStyle(fontSize: 15),
+							SizedBox(
+								height: 45,
+								child: Padding(
+									padding: const EdgeInsets.symmetric(horizontal: 20.0),
+									child: Text(
+										'Regulations require you to upload a facial photo. '
+												'Don\'t worry, your data will be safe and private.',
+										style: TextStyle(fontSize: 15),
+									),
 								),
 							),
+
 
 							SizedBox(height: 20),
 

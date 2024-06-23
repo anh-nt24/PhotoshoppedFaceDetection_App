@@ -24,31 +24,39 @@ class ResultPage extends StatelessWidget {
 						SizedBox(height: 50), // Space between progress bar and title
 						
 						// HEADING
-						Padding(
-							padding: const EdgeInsets.symmetric(horizontal: 20.0),
-							child: Text(
-								'Edited Regions Detected!',
-								style: TextStyle(
-									fontSize: 27,
-									fontWeight: FontWeight.bold,
+						SizedBox(
+							height: 90,
+							child: Padding(
+								padding: const EdgeInsets.symmetric(horizontal: 20.0),
+								child: Text(
+									'Edited Regions Detected!',
+									style: TextStyle(
+										fontSize: 27,
+										fontWeight: FontWeight.bold,
+									),
 								),
 							),
 						),
+
 						
 						SizedBox(height: 8), // Space between title and subtitle
 					
 						// SUB HEADING
-						Padding(
-							padding: const EdgeInsets.symmetric(horizontal: 20.0), // Add padding to both sides
-							child: Text(
-								'We identified areas that might have been edited in your photo. Review the highlighted regions for more details.',
-								style: TextStyle(fontSize: 15),
-								textAlign: TextAlign.start,
+						SizedBox(
+							height: 45,
+							child: Padding(
+								padding: const EdgeInsets.symmetric(horizontal: 20.0), // Add padding to both sides
+								child: Text(
+									'We identified areas that might have been edited in your photo. Review the highlighted regions for more details.',
+									style: TextStyle(fontSize: 15),
+									textAlign: TextAlign.start,
+								),
 							),
 						),
+
 					
 					
-						SizedBox(height: 20),
+						SizedBox(height: 25),
 
 					
 						// DISPLAY RESULT
