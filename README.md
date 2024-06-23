@@ -66,23 +66,23 @@ Ensure you have the following installed on your system:
 
 2. **Navigate to the Project Directory:**
 
-    ```sh
-    cd PhotoshoppedFaceDetection_App
-    ```
+  ```sh
+  cd PhotoshoppedFaceDetection_App
+  ```
 
 3. **Install Dependencies:**
 
-    ```sh
-    flutter pub get
-    ```
+  ```sh
+  flutter pub get
+  ```
 
 4. **Run app:**
   
   Use of the command line
 
-    ```sh
-    flutter run
-    ```
+  ```sh
+  flutter run
+  ```
 
   or run from IDE/code editor
 
