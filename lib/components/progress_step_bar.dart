@@ -7,7 +7,6 @@ class ProgressStepBar extends StatelessWidget {
 	final double width;
 	final Color backgroundColor;
 	final Color progressColor;
-	final BorderRadiusGeometry borderRadius;
 
 	const ProgressStepBar({
 		Key? key,
@@ -17,7 +16,6 @@ class ProgressStepBar extends StatelessWidget {
 		this.width = 150.0,
 		this.backgroundColor = Colors.grey,
 		this.progressColor = const Color.fromRGBO(221, 102, 99, 1.0),
-		this.borderRadius = const BorderRadius.all(Radius.circular(4)),
 	}) : super(key: key);
 
 	@override
@@ -31,10 +29,10 @@ class ProgressStepBar extends StatelessWidget {
 			width: width,
 			decoration: BoxDecoration(
 				color: backgroundColor,
-				borderRadius: borderRadius,
+				borderRadius: BorderRadius.circular(4),
 			),
 			child: ClipRRect(
-				borderRadius: borderRadius,
+				borderRadius: BorderRadius.circular(4),
 				child: Transform(
 					alignment: Alignment.center,
 					transform: transform,
@@ -44,6 +42,7 @@ class ProgressStepBar extends StatelessWidget {
 						valueColor: AlwaysStoppedAnimation<Color>(progressColor),
 						semanticsLabel: 'Progress indicator',
 						semanticsValue: '${(value * 100).toInt()}%',
+						borderRadius: BorderRadius.circular(4),
 					),
 				),
 			),

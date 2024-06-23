@@ -18,7 +18,7 @@ class LoadingOverlay extends StatelessWidget {
 				child,
 				if (isLoading)
 					Container(
-						color: Colors.black.withOpacity(0.8),
+						color: Colors.black.withOpacity(0.4),
 						child: Center(
 							child: LoadingAnimationWidget.flickr(
 								leftDotColor: Color.fromRGBO(221, 102, 99, 1.0), 

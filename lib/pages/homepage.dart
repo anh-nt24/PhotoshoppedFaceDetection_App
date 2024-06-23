@@ -33,7 +33,7 @@ class MyHomePage extends StatelessWidget {
 								child: Text(
 									'Upload an image to detect edited regions',
 									style: TextStyle(
-										fontSize: 30,
+										fontSize: 27,
 										fontWeight: FontWeight.bold,
 									),
 								),
@@ -47,7 +47,7 @@ class MyHomePage extends StatelessWidget {
 								child: Text(
 									'Regulations require you to upload a facial photo. '
 									'Don\'t worry, your data will be safe and private.',
-									style: TextStyle(fontSize: 20),
+									style: TextStyle(fontSize: 15),
 								),
 							),
 
@@ -78,9 +78,11 @@ class MyHomePage extends StatelessWidget {
 													Icons.upload_file,
 													size: 50,
 													color: Color.fromRGBO(221, 102, 99, 1.0),
-												)
-												: 
-												Image.file(imageState.selectedImage!, fit: BoxFit.cover, ),
+												) : 
+												ClipRRect(
+													borderRadius: BorderRadius.circular(5.0),
+													child: Image.file(imageState.selectedImage!, fit: BoxFit.cover)
+												),
 										),
 									),
 								),
@@ -100,7 +102,6 @@ class MyHomePage extends StatelessWidget {
 											var result = await resultState.analyzeImage(
 												imageState.selectedImage, context
 											);
-											print(result);
 											if (result != null) {
 												Navigator.push(
 													context,
