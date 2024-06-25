@@ -33,10 +33,10 @@ class ResultPage extends StatelessWidget {
 									child: Text(
 										'Edited Regions Detected!',
 										style: TextStyle(
-											fontSize: 27,
 											fontWeight: FontWeight.bold,
+											fontSize: 27,
 										),
-										textAlign: TextAlign.start,
+										textAlign: TextAlign.start, 
 									),
 								),
 							),
