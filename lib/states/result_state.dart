@@ -21,10 +21,16 @@ class ResultState extends ChangeNotifier {
 		notifyListeners();
 	}
 
-	void resetState() {
+	void _setResult(File file) {
+		_result = file;
+		notifyListeners();
+	}
+
+	Future <bool> resetState() async{
 		_response = null;
 		_result = null;
 		notifyListeners();
+    return true;
     }
 
 	Future<File?> analyzeImage(File? imageFile, BuildContext context) async {
@@ -48,9 +54,11 @@ class ResultState extends ChangeNotifier {
 			if (status == 200) {
 				Uint8List imageBytes = await _response!.stream.toBytes();
 				final tempDir = await getTemporaryDirectory();
-				final file = File('${tempDir.path}/result.png');
+				DateTime now = DateTime.now();
+				String current = '${now.year}-${now.month}-${now.day}_${now.hour}-${now.minute}-${now.second}';
+				final file = File('${tempDir.path}/${current}.png');
 				await file.writeAsBytes(imageBytes);
-				_result = file;
+				_setResult(file);
 				return file;
 			} else if (status == 400) {
 				var data = await _response!.stream.bytesToString();

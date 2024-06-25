@@ -141,9 +141,9 @@ class ResultPage extends StatelessWidget {
 							width: 320, // Ensure button expands horizontally to match screen width
 							height: 50, // Button height
 							child: ElevatedButton(
-								onPressed: () {
-									resultState.resetState();
-									imageState.resetState();
+								onPressed: () async{
+									await resultState.resetState();
+									await imageState.resetState();
 									Navigator.pop(context);
 								},
 								style: ElevatedButton.styleFrom(
