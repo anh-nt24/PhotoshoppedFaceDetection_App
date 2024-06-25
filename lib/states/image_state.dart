@@ -13,8 +13,9 @@ class ImageState extends ChangeNotifier {
 		notifyListeners();
 	}
 
-	void resetState() {
+	Future <bool>  resetState() async{
 		_selectedImage = null; // Reset selected image
 		notifyListeners();
+    return true;
     }
 }
