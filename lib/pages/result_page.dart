@@ -25,14 +25,18 @@ class ResultPage extends StatelessWidget {
 						
 						// HEADING
 						SizedBox(
-							height: 90,
+							height: 75,
 							child: Padding(
 								padding: const EdgeInsets.symmetric(horizontal: 20.0),
-								child: Text(
-									'Edited Regions Detected!',
-									style: TextStyle(
-										fontSize: 27,
-										fontWeight: FontWeight.bold,
+								child: Align(
+									alignment: Alignment.topLeft, // Align to the top left
+									child: Text(
+										'Edited Regions Detected!',
+										style: TextStyle(
+											fontSize: 27,
+											fontWeight: FontWeight.bold,
+										),
+										textAlign: TextAlign.start,
 									),
 								),
 							),
@@ -43,20 +47,23 @@ class ResultPage extends StatelessWidget {
 					
 						// SUB HEADING
 						SizedBox(
-							height: 45,
+							height: 65,
 							child: Padding(
 								padding: const EdgeInsets.symmetric(horizontal: 20.0), // Add padding to both sides
-								child: Text(
-									'We identified areas that might have been edited in your photo. Review the highlighted regions for more details.',
-									style: TextStyle(fontSize: 15),
-									textAlign: TextAlign.start,
+								child: Align(
+									alignment: Alignment.topLeft, // Align to the top left
+									child: Text(
+										'We identified areas that might have been edited in your photo. Review the highlighted regions for more details.',
+										style: TextStyle(fontSize: 15),
+										textAlign: TextAlign.start,
+									),
 								),
 							),
 						),
 
 					
 					
-						SizedBox(height: 25),
+						SizedBox(height: 17),
 
 					
 						// DISPLAY RESULT

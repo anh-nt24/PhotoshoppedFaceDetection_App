@@ -4,7 +4,8 @@ import 'pages/homepage.dart';
 import 'states/image_state.dart';
 import 'states/result_state.dart';
 
-void main() {
+void main() async {
+	await Future.delayed(Duration(milliseconds: 500));
   	runApp(MyApp());
 }
 

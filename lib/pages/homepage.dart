@@ -29,7 +29,7 @@ class MyHomePage extends StatelessWidget {
 
 							// HEADING
 							SizedBox(
-								height: 90,
+								height: 75,
 								child: Padding(
 									padding: const EdgeInsets.symmetric(horizontal: 20.0),
 									child: Text(
@@ -38,6 +38,7 @@ class MyHomePage extends StatelessWidget {
 											fontSize: 27,
 											fontWeight: FontWeight.bold,
 										),
+										textAlign: TextAlign.start,
 									),
 								),
 							),
@@ -47,13 +48,17 @@ class MyHomePage extends StatelessWidget {
 
 							// SUB HEADING
 							SizedBox(
-								height: 45,
+								height: 65,
 								child: Padding(
 									padding: const EdgeInsets.symmetric(horizontal: 20.0),
-									child: Text(
-										'Regulations require you to upload a facial photo. '
+									child: Align(
+										alignment: Alignment.topLeft, // Align to the top left
+										child: Text(
+												'Regulations require you to upload a facial photo. '
 												'Don\'t worry, your data will be safe and private.',
-										style: TextStyle(fontSize: 15),
+												style: TextStyle(fontSize: 15),
+												textAlign: TextAlign.start,
+										),
 									),
 								),
 							),
